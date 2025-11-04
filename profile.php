@@ -3,9 +3,7 @@ if(!isset($_SESSION['user']))
 {
 	header('location:login.php');
 }
-	$qry2=mysqli_query($con,"select * from tbl_movie where movie_id='".$_SESSION['movie']."'");
-	$movie=mysqli_fetch_array($qry2);
-	?>
+?>
 <div class="content">
 	<div class="wrap">
 		<div class="content-top">
@@ -62,7 +60,7 @@ if(!isset($_SESSION['user']))
 									<?php echo $bkg['no_seats'];?>
 								</td>
 								<td>
-									Rs. <?php echo $bkg['amount'];?>
+									KES <?php echo $bkg['amount'];?>
 								</td>
 								<td>
 									<?php  if($bkg['ticket_date']<date('Y-m-d'))
@@ -102,11 +100,3 @@ if(!isset($_SESSION['user']))
 	</div>
 </div>
 <?php include('footer.php');?>
-<script type="text/javascript">
-	$('#seats').change(function(){
-		var charge=<?php echo $screen['charge'];?>;
-		amount=charge*$(this).val();
-		$('#amount').html("Rs "+amount);
-		$('#hm').val(amount);
-	});
-</script>

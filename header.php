@@ -1,7 +1,7 @@
 <?php
 include('config.php');
 session_start();
-date_default_timezone_set('Asia/Kathmandu');
+date_default_timezone_set('Africa/Nairobi');
 ?>
 
 <!DOCTYPE HTML>
@@ -62,13 +62,12 @@ date_default_timezone_set('Asia/Kathmandu');
 </div>
 <script>
 function myFunction() {
-     if($('#hero-demo').val()=="")
-        {
-            alert("Please enter movie name...");
-            return false;
-        }
-    else{
+    if($('#hero-demo').val()=="") {
+        alert("Please enter movie name...");
+        return false;
+    }
+    else {
         return true;
     }
-    </script>
 }
+</script>

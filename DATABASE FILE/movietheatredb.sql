@@ -85,11 +85,11 @@ INSERT INTO `tbl_login` (`id`, `user_id`, `username`, `password`, `user_type`) V
 (1, 0, 'admin', 'password', 0),
 (2, 3, 'theatre', 'password', 1),
 (3, 4, 'theatre2', 'password', 1),
-(12, 2, 'harryden@gmail.com', 'password', 2),
+(12, 2, 'kipchoge@gmail.com', 'password', 2),
 (15, 14, 'USR295127', 'PWD195747', 1),
-(17, 4, 'bruno@gmail.com', 'password', 2),
+(17, 4, 'wangari@gmail.com', 'password', 2),
 (18, 6, 'THR760801', 'PWD649976', 1),
-(19, 5, 'james@gmail.com', 'password', 2);
+(19, 5, 'lupita@gmail.com', 'password', 2);
 
 -- --------------------------------------------------------
 
@@ -164,9 +164,9 @@ CREATE TABLE `tbl_registration` (
 --
 
 INSERT INTO `tbl_registration` (`user_id`, `name`, `email`, `phone`, `age`, `gender`) VALUES
-(2, 'Harry Den', 'harryden@gmail.com', '1247778540', 22, 'gender'),
-(4, 'Bruno', 'bruno@gmail.com', '7451112450', 30, 'gender'),
-(5, 'James', 'james@gmail.com', '7124445696', 25, 'gender');
+(2, 'Kipchoge Keino', 'kipchoge@gmail.com', '0722778540', 22, 'gender'),
+(4, 'Wangari Maathai', 'wangari@gmail.com', '0751112450', 30, 'gender'),
+(5, 'Lupita Nyongo', 'lupita@gmail.com', '0724445696', 25, 'gender');
 
 -- --------------------------------------------------------
 
@@ -279,10 +279,10 @@ CREATE TABLE `tbl_theatre` (
 --
 
 INSERT INTO `tbl_theatre` (`id`, `name`, `address`, `place`, `state`, `pin`) VALUES
-(3, 'AMC Theatre', '11500 Ash St', 'Leawd', 'DM', 691523),
-(4, 'Cinemark', '3900 Dallas Parkway Suite 500 Plano', '12 Street, Ep', 'UD', 691523),
-(5, 'Midtown Cinemas', 'Aue', 'Charles Street, EUS', 'DMM', 691523),
-(6, 'Riverview Theater', '3800 42nd Ave S', 'Minneapolis, MN 55406', 'Minnesot', 224450);
+(3, 'Westgate Cinema', 'Westgate Mall, Mwanzi Road', 'Westlands', 'Nairobi', 00100),
+(4, 'Century Cinemax', 'Junction Mall, Ngong Road', 'Karen', 'Nairobi', 00200),
+(5, 'Anga Diamond Cinema', 'Diamond Plaza II', 'Parklands', 'Nairobi', 00100),
+(6, 'Nyali Cinemax', 'Nyali Mall', 'Nyali', 'Mombasa', 80100);
 
 --
 -- Indexes for dumped tables
